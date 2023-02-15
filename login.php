@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <?php 
-/* session_start();
+session_start();
 
-include('./db_conenct.php');
+include('./db_connect.php');
 ob_start();
 
 if (isset($_SESSION['system'])) {
@@ -14,11 +14,11 @@ if (isset($_SESSION['system'])) {
     }
 }
 ob_end_flush();
- */
+
 ?>
 <?php 
-/* if(isset($_SESSION['login_id']))
-    header("location:index.php?page=dashboard"); */
+if(isset($_SESSION['login_id']))
+    header("location:index.php?page=dashboard");
 ?>
 <?php include 'header.php';?>
 
