@@ -6,7 +6,7 @@ session_start();
 include('./db_connect.php');
 ob_start();
 
-if (isset($_SESSION['system'])) {
+if (!isset($_SESSION['system'])) {
     $system = $conn->query("SELECT * FROM system_settings")->fetch_array();
     foreach ($system as $k => $v){
         $_SESSION['system'][$k] = $v;
@@ -18,7 +18,7 @@ ob_end_flush();
 ?>
 <?php 
 if(isset($_SESSION['login_id']))
-    header("location:index.php?page=dashboard");
+header("location:index.php?page=dashboard");
 ?>
 <?php include 'header.php';?>
 
@@ -32,12 +32,12 @@ if(isset($_SESSION['login_id']))
 	<div class="login-logo">
 		<a href="#" class="">
 			<img class="my-1" src="/abpocTMS/assets/uploads/aclan.png" style="height: 75px; width: 75px;"><br>
-			<b><?php //echo $_SESSION['system']['name']?> Task Monitoring <br> Login</b>
+			<b><?php echo $_SESSION['system']['name']?><br> Login</b>
 		</a>
 	</div>
 	<hr>
 	<div class="card-body login-card-body my-3"  style="border-radius:25%;">
-		<form action=" " id="login-form">
+		<form action="" id="login-form">
 			<div class="input-group mb-3">
 				<input type="email" class="form-control" name="email" required placeholder="Email" autocomplete="off"></input>
 				<div class="input-group-append">
@@ -92,9 +92,9 @@ $(document).ready(function(){
 		},
 		success:function(resp){
 			if(resp == 1){
-				location.href='youtube.com';
+				location.href='index.php?page=dashboard';
 			}else{
-				$('#login-form').prepend('<div class="alert alert-danager">Username or password is incorrect.</div>')
+				$('#login-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>')
 				end_load();
 			}
 		}
@@ -112,7 +112,7 @@ $(document).ready(function(){
 <strong>Copyright &copy; 2023 <a href="#">Ashir BPO Corporation</a>.</strong>
 All rights reserved.
 <div class="float-right d-none d-sm-inline-block">
-	<b><?php //echo $_SESSION['system']['name']?>Task Monitoring System</b>
+	<b><?php echo $_SESSION['system']['name']?></b>
 </div>      
 </footer>
 <?php include 'footer.php'; ?>
