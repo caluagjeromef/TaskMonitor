@@ -1,2 +1,2 @@
 <?php include 'db_connect.php';?>
-<?php echo "hello mf" ?>
+<?php include '404.html';?>

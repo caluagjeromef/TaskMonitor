@@ -16,6 +16,5 @@ if(!isset($_SESSION['login_id']))
 include 'header.php' 
 ?>
 <body>
-<?php include 'topbar.php' ?>
-<?php include 'sidebar.php' ?>
+<h1 class=text-center>DASHBOARD HERE</h1>
 </body>

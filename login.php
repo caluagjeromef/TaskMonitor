@@ -29,7 +29,7 @@ header("location:index.php?page=dashboard");
 <div class="login-box">
 <div class="card py-3 px-2"  style="border-radius: 30px; background-color: rgba(223,238,243, 0.9);">
 	<div class="login-logo">
-		<a href="#" class="" style="line-height: -1;">
+		<a href="#" class="" style="line-height: 0;">
 			<img class="my-1" src="/abpocTMS/assets/uploads/aclan.png" style="height: 75px; width: 75px;"><br>
 			<b  style="color: #000000;"><?php echo $_SESSION['system']['name']?> Login </b>
 		</a>
