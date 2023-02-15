@@ -29,7 +29,7 @@ header("location:index.php?page=dashboard");
 <div class="login-box">
 <div class="card py-3 px-2"  style="border-radius: 30px; background-color: rgba(223,238,243, 0.9);">
 	<div class="login-logo">
-		<a href="#" class="">
+		<a href="#" class="" style="line-height: -1;">
 			<img class="my-1" src="/abpocTMS/assets/uploads/aclan.png" style="height: 75px; width: 75px;"><br>
 			<b  style="color: #000000;"><?php echo $_SESSION['system']['name']?> Login </b>
 		</a>
@@ -64,6 +64,15 @@ header("location:index.php?page=dashboard");
 					<button type="submit" class="btn btn-success btn-block">LOGIN</button>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-2">
+					
+				</div>
+				<div class="col-8 mt-3 mb-0 px-3 text-center" style="line-height: 1;">
+					<small>Not a member? <br>
+					<strong>Contact your Admin</strong></small>
+				</div>
+			</div>
 		</form>
 	</div>
 	<!-- /.login-card-body -->
@@ -91,7 +100,7 @@ $(document).ready(function(){
 			if(resp == 1){
 				location.href='index.php?page=dashboard';
 			}else{
-				$('#login-form').prepend('<div class="alert alert-danger text-center px-1 py-2">Incorrect Username and/or Password</div>')
+				$('#login-form').prepend('<div class="alert alert-danger text-center px-1 py-2">Invalid Username and/or Password</div>')
 				end_load();
 			}
 		}
