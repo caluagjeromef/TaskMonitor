@@ -28,18 +28,18 @@ ob_end_flush();
     background-size: cover;
     font-family: Rockwell;">
 <div class="login-box">
-<div class="card py-5" style="border-radius:25px;">
+<div class="card py-3 px-2" style="border-radius:25px;">
 	<div class="login-logo">
-		<a href="#" class="text-black">
+		<a href="#" class="">
 			<img class="my-1" src="/abpocTMS/assets/uploads/aclan.png" style="height: 75px; width: 75px;"><br>
-			<b><?php //echo $_SESSION['system']['name']?> TMS Login</b>
+			<b><?php //echo $_SESSION['system']['name']?> Task Monitoring <br> Login</b>
 		</a>
 	</div>
 	<hr>
 	<div class="card-body login-card-body my-3"  style="border-radius:25%;">
-		<form action="" id="login-form">
+		<form action=" " id="login-form">
 			<div class="input-group mb-3">
-				<input type="email" class="form-control" name="email" required placeholder="Email"></input>
+				<input type="email" class="form-control" name="email" required placeholder="Email" autocomplete="off"></input>
 				<div class="input-group-append">
 					<div class="input-group-text">
 						<span class="fas fa-envelope"></span>
@@ -56,7 +56,7 @@ ob_end_flush();
 			</div>
 			<div class="row">
 				<div class="col-8">
-					<div class="icheck-primary">
+					<div class="icheck-success">
 						<input type="checkbox" id="remember">
 						<label for="remember">
 							Remember Me
@@ -92,7 +92,7 @@ $(document).ready(function(){
 		},
 		success:function(resp){
 			if(resp == 1){
-				location.href='index.php?page=dashboard';
+				location.href='youtube.com';
 			}else{
 				$('#login-form').prepend('<div class="alert alert-danager">Username or password is incorrect.</div>')
 				end_load();
