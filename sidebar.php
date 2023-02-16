@@ -1,9 +1,9 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <div class="dropdown">
-   	<a href="./" class="brand-link">
+   	<a href="./" class="brand-link" >
         <?php if($_SESSION['login_type'] == 1): ?>
         <h3 class="text-center p-0 m-0"><b>ADMIN</b></h3>
-        <h4 class="text-center p-0 m-0 text-success"><?php echo $_SESSION['login_lastname' ] ? $_SESSION['login_lastname'] : '[No Name Set]'?></h4>
+        <h4 class="text-center p-0 m-0 text-success" ><?php echo $_SESSION['login_lastname' ] ? $_SESSION['login_lastname'] : '[No Name Set]'?></h4>
         <?php elseif($_SESSION['login_type'] == 2): ?>
         <h3 class="text-center p-0 m-0"><b>MANAGER</b></h3>
         <h4 class="text-center p-0 m-0 text-success"><?php echo $_SESSION['login_firstname'] ? $_SESSION['login_firstname'] : '[No Name Set]'?></h4>

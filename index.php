@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php session_start() ?>
 <?php 
 if(!isset($_SESSION['login_id']))
@@ -19,7 +21,7 @@ include 'header.php'
 <div class="wrapper">
 
 	<?php include 'sidebar.php';?>
-	<?php //include 'topbar.php';?>
+	<?php include 'topbar.php';?>
 	
 	
 	<div class="content-wrapper">
@@ -126,3 +128,4 @@ include 'header.php'
 <!-- EVERY required jQuery/Bootstrap -->
 <?php include 'footer.php' ?>
 </body>
+</html>

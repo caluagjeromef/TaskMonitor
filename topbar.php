@@ -21,7 +21,7 @@
      <li class="nav-item dropdown">
             <a class="nav-link"  data-toggle="dropdown" aria-expanded="true" href="javascript:void(0)">
               <span>
-                <div class="d-flex badge-pill">
+                <div class="d-flex badge-pill text-white">
                   <span class="fa fa-user mr-2 mt-1"></span>
                   <span><b><?php echo ucwords($_SESSION['login_firstname']) ?></b></span>
                   <span class="fa fa-angle-down ml-2 mt-1"></span>
