@@ -19,7 +19,7 @@
       <nav class="mt-5">
         <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item dropdown">
-            <a href="./" class="nav-link nav-home">
+            <a href="./" class="nav-link nav-dashboard">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard

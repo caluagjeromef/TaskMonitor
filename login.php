@@ -57,7 +57,7 @@ header("location:index.php?page=dashboard");
 				<div class="col-8">
 					<div class="d-flex mt-2">
 						<input class="mb-2 mr-1" type="checkbox" id="remember">
-						<label for="remember">Remember Me</label>
+						<label for="remember" role="button">Remember Me</label>
 					</div>
 				</div>
 				<div class="col-4">
