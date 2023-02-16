@@ -3,7 +3,7 @@
    	<a href="./" class="brand-link">
         <?php if($_SESSION['login_type'] == 1): ?>
         <h3 class="text-center p-0 m-0"><b>ADMIN</b></h3>
-        <h4 class="text-center p-0 m-0 text-success"><?php echo $_SESSION['login_lastname' ]?></h4>
+        <h4 class="text-center p-0 m-0 text-success"><?php echo $_SESSION['login_lastname' ]?> [NAME HERE]</h4>
         <?php elseif($_SESSION['login_type'] == 2): ?>
         <h3 class="text-center p-0 m-0"><b>MANAGER</b></h3>
         <h4 class="text-center p-0 m-0 text-success"><?php echo $_SESSION['login_firstname']?></h4>

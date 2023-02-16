@@ -15,6 +15,35 @@ if(!isset($_SESSION['login_id']))
 
 include 'header.php' 
 ?>
-<body>
-<h1 class=text-center>DASHBOARD HERE</h1>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed" id="shape-left" style="font-family: Rockwell;">
+<div class="wrapper">
+	<?php include 'topbar.php';?>
+	<?php include 'sidebar.php';?>
+	
+	<div class="content-wrapper">
+		<div class="toast" id="alert_toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-body text-white">
+			</div>
+		</div>
+		<div class="toast-top-right fixed" id="toastContainerTopRight"></div>
+		
+		<div class="content-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="m-0 mb-5"><?php echo $title ?></h1>
+					</div>
+				</div>
+				<h1 class="text-center mt-5 pt-5">[DASHBOARD HERE]</h1>
+				<h1 class="text-center mt-5 pt-5">[DASHBOARD HERE]</h1>
+				<h1 class="text-center mt-5 pt-5">[DASHBOARD HERE]</h1>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
 </body>
+<div class=""></div>
